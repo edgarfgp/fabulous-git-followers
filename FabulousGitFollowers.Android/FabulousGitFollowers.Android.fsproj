@@ -120,6 +120,11 @@
   <Import Project="..\packages\Xamarin.Forms.4.4.0.991265\build\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.4.4.0.991265\build\Xamarin.Forms.targets')" />
   <Import Project="..\.nuget\NuGet.targets" />
   <ItemGroup>
+    <Reference Include="FSharp.Json, Version=0.4.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\FSharp.Json.0.4.0\lib\netstandard2.0\FSharp.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Java.Interop" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Mono.Android" />
     <Reference Include="System" />

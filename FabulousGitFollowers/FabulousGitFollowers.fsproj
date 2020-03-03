@@ -6,9 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="FabulousGitFollowers.fs" />
+    <Compile Include="Models.fs" />
+    <Compile Include="NetworkService.fs" />
+    <Compile Include="FavoriteListPage.fs" />
+    <Compile Include="SearchPage.fs" />
+    <Compile Include="App.fs" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="FSharp.Json" Version="0.4.0" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
     <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
     <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
     <PackageReference Include="Fabulous.XamarinForms" Version="0.52.0" />
